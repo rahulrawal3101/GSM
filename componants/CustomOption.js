@@ -2,9 +2,9 @@ import { Grid, Typography } from '@mui/material'
 import React from 'react'
 
 const CustomOption = ({option,type,onClick}) => {
-  console.log('type',type);
-  console.log('option',option);
-  console.log('onClick',onClick)
+  // console.log('type',type);
+  // console.log('option',option);
+  // console.log('onClick',onClick)
   return (
     <>
         {/* <div onClick={onClick} className="flex justify-center items-center rounded-xl p-2 px-3 lg:w-2/5 sm:w-full xs:w-full cursor-pointer hover:bg-black transition-all bg-slate-700">
