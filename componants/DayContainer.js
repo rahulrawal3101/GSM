@@ -36,8 +36,8 @@ const DayContainer = ({ day, timingData, onChange, value }) => {
             <Grid container>
                 {Object.keys(timingData).map((time,index) => {
                     return (
-                        <Grid item key={index} xs={6} sx={{ overflow: 'hidden', p:'2px' }}>
-                            <FormGroup sx={{ border: '1px solid lightgrey' }}>
+                        <Grid item key={index} xs={6} sx={{ overflow: 'hidden',  }}>
+                            <FormGroup sx={{ border: '1px solid lightgrey',p:'5px' }}>
                                 <FormControlLabel sx={{ display: 'flex', justifyContent: 'space-between',  }} control={<Checkbox checked={value[day][time]} />} label={<Typography>{time}</Typography>} onChange={() => onChange(day, time)} />
 
                             </FormGroup>

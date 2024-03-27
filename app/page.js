@@ -136,7 +136,7 @@ const page = () => {
       console.log(res)
       if(res){
         alert(res.message);
-        router.push('/');
+        // router.push('/');
         localStorage.removeItem('player');
         setCount("")
         router.push('/login')
@@ -183,7 +183,7 @@ const page = () => {
                   <ArrowCircleRightOutlinedIcon />
                   <Typography sx={{ fontSize: '15px', ml: '4px',color:'#ffa000', fontWeight:'bold' }}>SATURDAY</Typography>
                 </Box>
-                <Box >
+                <Box sx={{mt:'10px'}}>
                 
                 <DayContainer value={timings} onChange={handleTimingChange} day="saturday" timingData={initialData.timings["saturday"]} />
 
@@ -197,7 +197,7 @@ const page = () => {
                   <Typography sx={{ fontSize: '15px', ml: '4px',color:'#ffa000', fontWeight:'bold' }}>SUNDAY</Typography>
                 </Box>
 
-                <Box >
+                <Box sx={{mt:'10px'}}>
                 <DayContainer value={timings} onChange={handleTimingChange} day="sunday" timingData={initialData.timings["sunday"]} />
 
                 </Box>
