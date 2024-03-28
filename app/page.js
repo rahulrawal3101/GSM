@@ -144,8 +144,13 @@ const page = () => {
     };
 
 // console.log(savedSelections)
+if(!localStorage.getItem('player')){
+  router.push('/login')
+}
+if(localStorage.getItem('player')){
   return (
     <>
+    
       <Grid container sx={{  justifyContent: 'center', alignItems: 'flex-start' }}>
         <Grid item xs={11} sx={{ mt: '25px', }}>
           <Grid container>
@@ -222,6 +227,9 @@ const page = () => {
       </Grid>
     </>
   )
+}
+
+ 
 }
 
 export default page
